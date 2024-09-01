@@ -7,7 +7,8 @@ phases:
     commands: 
       - echo "Installing dependencies using node20"
       - npm ci
-      - echo "Done installing dependencis ==>"
+      - echo "Done installing dependencies ==>"
+      
   build:
     commands:
       - echo "Building the React project"
@@ -17,5 +18,11 @@ phases:
 artifacts:
   files:
     - '**/*'
-  discard-paths: no
-  base-directory: dist    
+  discard-paths: yes  # Asegura que los archivos se coloquen en el root
+  base-directory: build  # Cambia "build" por el directorio donde se genera tu build
+  secondary-artifacts:
+    index-file:
+      files:
+        - index.html
+      discard-paths: yes
+      base-directory: build
