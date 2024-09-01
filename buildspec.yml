@@ -19,4 +19,4 @@ artifacts:
   files:
     - '**/*'  # Incluir todos los archivos y carpetas generados en el build
   discard-paths: no  # Mantener la estructura de carpetas
-  base-directory: build  # Carpeta donde se genera el build
+  base-directory: out  # Carpeta donde se genera el build
