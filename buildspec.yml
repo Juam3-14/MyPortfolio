@@ -17,12 +17,6 @@ phases:
 
 artifacts:
   files:
-    - '**/*'
-  discard-paths: yes  # Asegura que los archivos se coloquen en el root
-  base-directory: build  # Cambia "build" por el directorio donde se genera tu build
-  secondary-artifacts:
-    index-file:
-      files:
-        - index.html
-      discard-paths: yes
-      base-directory: build
+    - '**/*'  # Incluir todos los archivos y carpetas generados en el build
+  discard-paths: no  # Mantener la estructura de carpetas
+  base-directory: build  # Carpeta donde se genera el build
