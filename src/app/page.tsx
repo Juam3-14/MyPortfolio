@@ -60,8 +60,7 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg"
-                    //src="/resources/cualcito_200x300.jpeg"
+                    src="/resources/cualcito_200x300.jpeg"
                     alt="Project One"
                     className="w-full h-48 object-cover rounded-md"
                     width={300}
@@ -79,8 +78,7 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg"
-                    //src="/resources/cualcito_200x300.jpeg"
+                    src="/resources/cualcito_200x300.jpeg"
                     alt="Project Two"
                     className="w-full h-48 object-cover rounded-md"
                     width={300}
@@ -98,8 +96,7 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/placeholder.svg"
-                    //src="/resources/cualcito_200x300.jpeg"
+                    src="/resources/cualcito_200x300.jpeg"
                     alt="Project Three"
                     className="w-full h-48 object-cover rounded-md"
                     width={300}
