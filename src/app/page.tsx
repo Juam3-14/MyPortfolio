@@ -60,11 +60,12 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/resources/cualcito_200x300.jpeg"
+                    src="/placeholder.svg"
+                    //src="/resources/cualcito_200x300.jpeg"
                     alt="Project One"
                     className="w-full h-48 object-cover rounded-md"
-                    width={200}
-                    height={100}
+                    width={300}
+                    height={200}
                   />
                   <Button className="mt-4 w-full" variant="outline" asChild>
                     <Link href="#">View Project</Link>
@@ -78,7 +79,8 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/resources/cualcito_200x300.jpeg"
+                    src="/placeholder.svg"
+                    //src="/resources/cualcito_200x300.jpeg"
                     alt="Project Two"
                     className="w-full h-48 object-cover rounded-md"
                     width={300}
@@ -96,7 +98,8 @@ export default function Component() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/resources/cualcito_200x300.jpeg"
+                    src="/placeholder.svg"
+                    //src="/resources/cualcito_200x300.jpeg"
                     alt="Project Three"
                     className="w-full h-48 object-cover rounded-md"
                     width={300}
