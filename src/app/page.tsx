@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Github, Linkedin, Mail } from "lucide-react"
+import Footer from "@/components/Footer"
+
 import Image from "next/image"
 import Link from "next/link"
 
@@ -111,23 +112,7 @@ export default function Component() {
           </div>
         </section>
       </main>
-      <footer id="contact" className="w-full max-w-7xl mx-auto flex flex-col gap-2 sm:flex-row py-6 shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-500 dark:text-gray-400">© 2024 Juan Pablo Piemonte. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            <span className="sr-only">GitHub</span>
-            <Github className="h-6 w-6" />
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            <span className="sr-only">LinkedIn</span>
-            <Linkedin className="h-6 w-6" />
-          </Link>
-          <Link className="text-xs hover:underline underline-offset-4" href="#">
-            <span className="sr-only">Email</span>
-            <Mail className="h-6 w-6" />
-          </Link>
-        </nav>
-      </footer>
+      <Footer />
     </div>
   )
 }
