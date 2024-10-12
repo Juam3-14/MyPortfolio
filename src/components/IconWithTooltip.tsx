@@ -1,4 +1,4 @@
-import { Tooltip } from 'react-tooltip'; // Importa el componente Tooltip
+import { Tooltip } from 'react-tooltip';
 
 interface IconWithTooltipProps {
     url: string;

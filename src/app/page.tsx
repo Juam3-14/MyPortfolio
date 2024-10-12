@@ -5,8 +5,6 @@ import Footer from "@/components/Footer"
 import Image from "next/image"
 import Link from "next/link"
 
-
-
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
