@@ -14,7 +14,7 @@ const IconWithTooltip: React.FC<IconWithTooltipProps> = ({ url, Icon, label }) =
                 target="_blank"
                 rel="noopener noreferrer"
                 data-tooltip-id={label} // Asocia el tooltip al ID
-                data-tooltip-content={url} // Contenido del tooltip
+                data-tooltip-content={label} // Contenido del tooltip
             >
                 <Icon className="h-6 w-6" />
                 <span className="sr-only">{label}</span>
