@@ -13,6 +13,8 @@ phases:
     commands:
       - echo "Building the React project"
       - npm run build
+      - echo "Exporting the static files"
+      - npm run export
       - echo "Done building the project ==> Exporting artifacts"
 
 artifacts:
