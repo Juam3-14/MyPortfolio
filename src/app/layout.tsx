@@ -27,7 +27,7 @@ export default function RootLayout({
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#projects">
               Projects
             </Link>
-            <Link className="text-sm font-medium hover:underline underline-offset-4" href="/about.html">
+            <Link className="text-sm font-medium hover:underline underline-offset-4" href="/about">
               About Me
             </Link>
             <Link className="text-sm font-medium hover:underline underline-offset-4" href="/#contact">

@@ -24,7 +24,7 @@ export default function Component() {
                   <Link href="#contact">Contact Me</Link>
                 </Button>
                 <Button asChild variant="outline">
-                  <Link href="/about.html">About Me</Link>
+                  <Link href="/about">About Me</Link>
                 </Button>
               </div>
             </div>
