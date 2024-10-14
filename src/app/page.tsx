@@ -1,12 +1,16 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import Footer from "@/components/Footer"
+import { EyeIcon } from "lucide-react"
+import Footer from "@/components/layouts/Footer"
 import Image from "next/image"
 import Link from "next/link"
+import AboutMe from "@/components/aboutMe"
+import Header from "@/components/layouts/Header"
 
 export default function Component() {
   return (
     <div className="flex flex-col min-h-screen">
+      <Header />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
@@ -24,12 +28,26 @@ export default function Component() {
                   <Link href="#contact">Contact Me</Link>
                 </Button>
                 <Button asChild variant="outline">
-                  <Link href="/about">About Me</Link>
+                  <Link href="/about-me">Resumee/CV</Link>
                 </Button>
               </div>
             </div>
           </div>
         </section>
+
+        <section id="aboutMe" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+          <AboutMe />
+          <div className="flex justify-center mt-6"> {/* Usar flex para centrar el botón */}
+            <Link href="/about-me">
+              <Button variant="outline" className="flex items-center space-x-2"> {/* Añadir clases para el estilo */}
+                <EyeIcon className="h-6 w-6" />
+                <span>Know More</span>
+              </Button>
+            </Link>
+          </div>
+
+        </section>
+
         <section id="projects" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6 max-w-7xl mx-auto">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-center mb-12">My Projects</h2>
@@ -73,6 +91,60 @@ export default function Component() {
               <Card>
                 <CardHeader>
                   <CardTitle>Project Three</CardTitle>
+                  <CardDescription>A brief description of the project</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/resources/cualcito_200x300.jpeg"
+                    alt="Project Three"
+                    className="w-full h-48 object-cover rounded-md"
+                    width={300}
+                    height={200}
+                  />
+                  <Button className="mt-4 w-full" variant="outline" asChild>
+                    <Link href="#">View Project</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Project Four</CardTitle>
+                  <CardDescription>A brief description of the project</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/resources/cualcito_200x300.jpeg"
+                    alt="Project Three"
+                    className="w-full h-48 object-cover rounded-md"
+                    width={300}
+                    height={200}
+                  />
+                  <Button className="mt-4 w-full" variant="outline" asChild>
+                    <Link href="#">View Project</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Project Five</CardTitle>
+                  <CardDescription>A brief description of the project</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <Image
+                    src="/resources/cualcito_200x300.jpeg"
+                    alt="Project Three"
+                    className="w-full h-48 object-cover rounded-md"
+                    width={300}
+                    height={200}
+                  />
+                  <Button className="mt-4 w-full" variant="outline" asChild>
+                    <Link href="#">View Project</Link>
+                  </Button>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardHeader>
+                  <CardTitle>Project Six</CardTitle>
                   <CardDescription>A brief description of the project</CardDescription>
                 </CardHeader>
                 <CardContent>

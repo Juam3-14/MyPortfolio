@@ -1,7 +1,7 @@
 'use client'
 
 import { Github, Linkedin, Mail } from "lucide-react"
-import IconWithTooltip from "./IconWithTooltip"
+import IconWithTooltip from "../IconWithTooltip"
 
 const Footer = () => {
     return (
